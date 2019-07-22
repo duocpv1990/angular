@@ -1,0 +1,7 @@
+<input type="text" placeholder="Enter username" [(ngModel)] = "name" #txtUsername>
+<h3 [ngStyle]="name.length % 2 == 0 ? eventStyle : oldStyle" >
+  Your name is: {{name}} 
+</h3>
+<div [class]="isHighlight ? 'square' : 'circle'"></div>
+<div [ngClass]="currentClass" ></div>
+
